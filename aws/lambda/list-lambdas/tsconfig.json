@@ -1,0 +1,28 @@
+{
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+  // "extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "target": "ESNext",
+    "module": "ESNext",
+    "removeComments": true,
+    "traceResolution": true,
+    "outDir": "js/",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "watchOptions": {
+    "excludeDirectories": [
+      "**/node_modules",
+      "js"
+    ]
+  }
+}

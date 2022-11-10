@@ -1,0 +1,25 @@
+{
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "removeComments": true,
+    "traceResolution": true,
+    "outDir": "js/",
+    "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true, /* When type checking, take into account 'null' and 'undefined'. */
+    "strictFunctionTypes": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "watchOptions": {
+    "excludeDirectories": [
+      "**/node_modules",
+      "app"
+    ]
+  }
+}
