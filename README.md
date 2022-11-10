@@ -14,7 +14,7 @@ Programmers often learn by example, or just need a good starting point for a pro
 
 * [`AWS`](./aws)
 
-* [Kubernetes](./k8s)
+* [`Kubernetes`](./k8s)
 
 * GitHub
 
