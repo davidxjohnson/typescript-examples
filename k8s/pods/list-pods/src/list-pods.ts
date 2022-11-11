@@ -37,10 +37,12 @@ do {
     undefined, undefined, timeout, undefined, undefined)
     .then((res) => {
       if (debug) { console.info(JSON.stringify(res.body.items, null, 2)); process.exit(0) }
-      for (var pod of res.body.items) {
+      var pod: k8s.V1Pod // makes type known to VSCode
+      for (pod of res.body.items) {
         console.info(String(pod.metadata?.name))
       }
       nextToken = res.body.metadata?._continue
+      k8s.V1Pod
     })
     .catch((error) => {
       if (error.hasOwnProperty('body')) { // api was reached, but has error
