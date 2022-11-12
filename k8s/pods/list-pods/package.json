@@ -1,14 +1,13 @@
 {
   "type": "module",
   "dependencies": {
-    "@kubernetes/client-node": "^0.17.0",
+    "@kubernetes/client-node": "^0.17.1",
     "commander": "^9.4.0"
   },
   "devDependencies": {
     "@tsconfig/node16-strictest-esm": "^1.0.3",
-    "@types/node": "^18.7.13",
+    "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "eslint": "^8.27.0"
+    "@typescript-eslint/parser": "^5.42.1"
   }
 }
