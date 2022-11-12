@@ -51,7 +51,6 @@ do {
       } else {                            // api could not be reached.
         console.error("k8s api not reachable:", error)
       }
-      // process.exit(1)
     })
     .finally(() => {
       console.info("nextToken:", nextToken)
