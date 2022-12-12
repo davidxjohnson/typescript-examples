@@ -8,6 +8,6 @@
     "commander": "^9.4.1"
   },
   "devDependencies": {
-    "@types/node": "^18.11.10"
+    "@types/node": "^18.11.13"
   }
 }
