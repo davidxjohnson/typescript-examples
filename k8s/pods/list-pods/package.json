@@ -2,7 +2,7 @@
   "type": "module",
   "dependencies": {
     "@kubernetes/client-node": "^0.17.1",
-    "commander": "^9.4.0"
+    "commander": "^10.0.0"
   },
   "devDependencies": {
     "@tsconfig/node16-strictest-esm": "^1.0.3",
