@@ -24,13 +24,13 @@ const dump: boolean = flag.opts()['dump']
 const kubeConfig: k8s.KubeConfig = new k8s.KubeConfig();
 kubeConfig.loadFromDefault()
 const k8sApi: k8s.CoreV1Api = kubeConfig.makeApiClient(k8s.CoreV1Api)
-const cluster: string = String(kubeConfig.getCurrentCluster()?.name)
+const cluster = String(kubeConfig.getCurrentCluster()?.name)
 
 // confirm input parameters (informational only)
 console.info("k8s cluster = %s\nnamespace = %s\npage limit = %s\ntimeout = %s\ndump = %s", cluster, namespace, pagelimit, timeout, dump)
 
 // fetch container names (or other attributes) using pagination
-var nextToken: string | undefined = undefined
+let nextToken: string | undefined = undefined
 do {
   await k8sApi.listNamespacedPod(namespace, undefined, undefined,
     nextToken, undefined, undefined, pagelimit,
@@ -39,7 +39,7 @@ do {
       if (dump) {
         console.info(JSON.stringify(res.body?.items, null, 2))
       } else {
-        for (var pod of res.body.items as k8s.V1Pod[]) {
+        for (const pod of res.body.items as k8s.V1Pod[]) {
           console.info(String(pod.metadata?.name))
         }
       }

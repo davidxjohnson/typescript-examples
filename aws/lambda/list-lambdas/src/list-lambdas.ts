@@ -27,13 +27,13 @@ const paginator: Paginator<ListFunctionsCommandOutput> = paginateListFunctions(p
 
 // using the nice features of SDK V3 to get a list of lambda names
 process.stdout.write('processing')
-var funcList: string[] = []; // populate some useful object, depending on what data you want
+const funcList: string[] = []; // populate some useful object, depending on what data you want
 
 try {
     for await (const page of paginator) { // itterate through pages
         // the ! after the 'Functions' object tells the compiler to 'just trust me' ...
         // the object will never be null or undefined.
-        for (var func of page.Functions!) { // itterate through functions in the current page
+        for (const func of page.Functions!) { // itterate through functions in the current page
             funcList.push(func.FunctionName!)
             // console.info(func)
         }
