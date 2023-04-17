@@ -10,9 +10,9 @@
     "removeComments": true,
     "traceResolution": true,
     "outDir": "js/",
-    "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type. */
-    "strictNullChecks": true, /* When type checking, take into account 'null' and 'undefined'. */
-    "strictFunctionTypes": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true
   },
   "include": [
     "src/**/*"
