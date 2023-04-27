@@ -8,6 +8,9 @@
       }
     ],
     "ignoreDeprecations": "5.0",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "removeComments": true,
     "traceResolution": true,
     "outDir": "js/",
