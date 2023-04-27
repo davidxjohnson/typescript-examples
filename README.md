@@ -4,7 +4,7 @@
 ## Introduction
 
 ### Terms of use:
-Programmers often learn by example, or just need a good starting point for a project. To this end, the code in this repo can be used without restriction or warranty.
+    Programmers often learn by example, or just need a good starting point for a project. To this end, the code in this repo can be used without restriction or warranty.
 
 ### Criteria for inclusion:
 

@@ -2,10 +2,10 @@
 
 ### Prerequisits:
 
-* Access to a K8S cluster (MiniKube, EKS, OpenShift etc). 
-* The k8s context must be set prior to running the example code. See [`KUBECONFIG` env variable or .kube/config file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/).
-* Install [typescript](https://www.typescriptlang.org/download)
-* [kubectl](https://kubernetes.io/docs/tasks/tools/) is helpful, but not required to run the examples. 
+* Access to a k8s cluster (MiniKube, EKS, OpenShift etc). 
+* The k8s context must be set prior to running . See [`KUBECONFIG` env variable or .kube/config file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/).
+* Install [node.js & npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (node v16, npm v9+).
+* Install [typescript](https://www.typescriptlang.org/download) (tsc 5.0).
 
 ### Running the example:
 

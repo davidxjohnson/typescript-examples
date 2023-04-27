@@ -7,8 +7,9 @@
         "name": "typescript-tslint-plugin"
       }
     ],
-    "target": "ESNext",
-    "module": "ESNext",
+    // "target": "ESNext",
+    // "module": "ESNext",
+    "ignoreDeprecations": "5.0",
     "removeComments": true,
     "traceResolution": true,
     "outDir": "js/",
