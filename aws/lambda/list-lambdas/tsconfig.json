@@ -1,6 +1,5 @@
 {
   "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
-  // "extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
   "compilerOptions": {
     "plugins": [
       {
@@ -9,11 +8,13 @@
     ],
     "ignoreDeprecations": "5.0",
     "removeComments": true,
-    "traceResolution": true,
+    //"traceResolution": true,
     "outDir": "js/",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "strictFunctionTypes": true
+    "strictFunctionTypes": true,
+    "module": "es2022",
+    "target": "es2017"
   },
   "include": [
     "src/**/*.ts"
@@ -25,3 +26,4 @@
     ]
   }
 }
+
