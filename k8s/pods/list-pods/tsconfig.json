@@ -12,7 +12,7 @@
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "removeComments": true,
-    "traceResolution": true,
+    // "traceResolution": true,
     "outDir": "js/",
     "noImplicitAny": true,
     "strictNullChecks": true,
