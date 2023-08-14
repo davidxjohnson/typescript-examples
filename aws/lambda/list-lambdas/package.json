@@ -2,7 +2,7 @@
   "type": "module",
   "dependencies": {
     "@aws-sdk/client-lambda": "^3.385.0",
-    "@aws-sdk/types": "^3.378.0",
+    "@aws-sdk/types": "^3.387.0",
     "@tsconfig/node16-strictest": "^1.0.4",
     "@tsconfig/node16-strictest-esm": "^1.0.3",
     "commander": "^11.0.0",
