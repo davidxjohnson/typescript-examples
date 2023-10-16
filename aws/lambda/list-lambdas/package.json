@@ -5,7 +5,7 @@
     "@aws-sdk/types": "^3.408.0",
     "@tsconfig/node16-strictest": "^1.0.4",
     "@tsconfig/node16-strictest-esm": "^1.0.3",
-    "commander": "^11.0.0",
+    "commander": "^11.1.0",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
