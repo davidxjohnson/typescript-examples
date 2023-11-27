@@ -8,6 +8,6 @@
   "devDependencies": {
     "@tsconfig/node16-strictest-esm": "^1.0.3",
     "@types/node": "^20.9.3",
-    "@typescript-eslint/parser": "^6.11.0"
+    "@typescript-eslint/parser": "^6.12.0"
   }
 }
