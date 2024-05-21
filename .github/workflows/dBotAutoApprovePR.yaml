@@ -5,15 +5,16 @@ permissions:
   pull-requests: write
   contents: write
 jobs:
-  add_comment:
+  comment:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - uses: actions/checkout@v3
-      - name: Add comment to PR by Dependabot
-        uses: octokit/action-comment@v2
+      - uses: actions/github-script@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          comment: |
-            @dependabot rebase
-            @dependabot squash and merge
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "@dependabot rebase\n@dependabot squash and merge"
+            })
