@@ -3,7 +3,7 @@
   "dependencies": {
     "@kubernetes/client-node": "^1.0.0",
     "@tsconfig/node16-strictest": "^1.0.4",
-    "commander": "^13.0.0"
+    "commander": "^13.1.0"
   },
   "devDependencies": {
     "@tsconfig/node16-strictest-esm": "^1.0.3",
