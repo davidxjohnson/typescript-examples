@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@kubernetes/client-node": "^1.1.0",
+    "@kubernetes/client-node": "^1.1.1",
     "@tsconfig/node16-strictest": "^1.0.4",
     "commander": "^13.1.0"
   },
