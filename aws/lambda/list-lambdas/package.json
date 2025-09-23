@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@aws-sdk/client-lambda": "^3.888.0",
+    "@aws-sdk/client-lambda": "^3.893.0",
     "@aws-sdk/types": "^3.862.0",
     "@tsconfig/node16-strictest": "^1.0.4",
     "@tsconfig/node16-strictest-esm": "^1.0.3",
@@ -9,6 +9,6 @@
     "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "@types/node": "^24.4.0"
+    "@types/node": "^24.5.2"
   }
 }
